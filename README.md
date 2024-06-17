@@ -12,12 +12,15 @@ pip install -r requirement.txt
 
 Download models from https://huggingface.co/flashingtt/MPAC
 
+Git LFS setup
 ```powershell
-# download git lfs
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 sudo apt-get install git-lfs
 git lfs install
+```
 
+Download models
+```powershell
 mkdir saved_models
 cd saved_models
 GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/flashingtt/MPAC
@@ -28,7 +31,6 @@ git lfs pull fiq_img2txt.pt tuned_clip_best.pt image_encoder.pt
 ## 3. Datasets
 
 ## 4. Run
-
 ### Train
 ```powershell
 # train stage one
