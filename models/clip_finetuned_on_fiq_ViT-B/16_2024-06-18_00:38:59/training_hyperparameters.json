@@ -1,0 +1,37 @@
+{
+    "aligner": false,
+    "asynchronous": true,
+    "batch_size": 128,
+    "bsc_loss": "False",
+    "clip_model_name": "ViT-B/16",
+    "corss_attn_layer": 4,
+    "cross_attn_head": 2,
+    "encoder": "none",
+    "final": true,
+    "fixed_image_encoder": true,
+    "img2txt_model_path": "/amax/home/xtyao/cir/clip4cir_pic2word/models/clip_finetuned_on_fiq_ViT-B/16_2023-12-12_16:55:16/saved_models/best_model.pt",
+    "learning_rate": 2e-06,
+    "maple_ctx_init": "a photo of",
+    "maple_n_ctx": 3,
+    "maple_prompt_depth": 9,
+    "network": "clip4cir_maple_final_s1",
+    "num_epochs": 100,
+    "num_workers": 64,
+    "save_best": true,
+    "save_training": true,
+    "sum_combiner": false,
+    "target_ratio": 1.25,
+    "train_dress_types": [
+        "dress",
+        "toptee",
+        "shirt"
+    ],
+    "transform": "targetpad",
+    "txt2img": false,
+    "val_dress_types": [
+        "dress",
+        "toptee",
+        "shirt"
+    ],
+    "validation_frequency": 1
+}
