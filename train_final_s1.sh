@@ -17,19 +17,13 @@ python clip_fine_tune.py \
    --final \
    --num-workers 64 \
    --fixed-image-encoder \
-   --img2txt-model-path /amax/home/xtyao/cir/clip4cir_pic2word/models/clip_finetuned_on_fiq_ViT-B/16_2023-12-12_16:55:16/saved_models/best_model.pt \
+   --img2txt-model-path ./saved_models/MPAC/fiq_img2txt.pt \
    --asynchronous \
-   --clip-model-path /amax/home/xtyao/cir/maple_clip_ab/models/clip_finetuned_on_fiq_ViT-B/16_2023-12-24_15:30:25/saved_models/tuned_clip_best.pt \
-   --clip-image-encoder-path /amax/home/xtyao/cir/maple_clip_ab/models/clip_finetuned_on_fiq_ViT-B/16_2023-12-24_15:30:25/saved_models/image_encoder.pt \
+   --clip-model-path ./saved_models/MPAC/tuned_clip_best.pt \
+   --clip-image-encoder-path ./saved_models/MPAC/image_encoder.pt \
    --maple-prompt-depth 9 \
    --maple-ctx-init 'a photo of' \
    --maple-n-ctx 3
-   
-   # --txt2img \
-   # --aligner \
-   # --cross-attn-layer 4 \
-   # --cross-attn-head 2 \
-   # --bsc-loss 
 
 
 # CUDA_VISIBLE_DEVICES=6 \
