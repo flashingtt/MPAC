@@ -1,7 +1,6 @@
 # MPAC
 
 ## 1. Setup
-
 ```powershell
 conda create -n mpac python=3.8 -y
 conda activate mpac
