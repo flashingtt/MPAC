@@ -8,9 +8,7 @@ import torchvision.transforms.functional as F
 from torch.utils.data import Dataset
 from torchvision.transforms import Compose, Resize, CenterCrop, ToTensor, Normalize
 
-# base_path = Path(__file__).absolute().parents[1].absolute() # 调用上一级目录
-# dase_path = Path(__file__).absolute().parents[2].absolute() # 调用上两级目录
-# data_path = Path(str(dase_path) + '/dataset')
+
 data_path = Path(str('/amax/home/xtyao/cir/dataset'))
 
 
