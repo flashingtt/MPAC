@@ -19,8 +19,8 @@ python clip_fine_tune.py \
    --fixed-image-encoder \
    --img2txt-model-path ./saved_models/MPAC/fiq_img2txt.pt \
    --asynchronous \
-   --clip-model-path ./saved_models/MPAC/tuned_clip_best.pt \
-   --clip-image-encoder-path ./saved_models/MPAC/image_encoder.pt \
+   --clip-model-path ./saved_models/MPAC/fiq_tuned_clip_best.pt \
+   --clip-image-encoder-path ./saved_models/MPAC/fiq_image_encoder.pt \
    --maple-prompt-depth 9 \
    --maple-ctx-init 'a photo of' \
    --maple-n-ctx 3
