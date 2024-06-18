@@ -47,9 +47,9 @@ git lfs pull --include="fiq_img2txt.pt tuned_clip_best.pt image_encoder.pt"
 
 ### Prepare Datasets
 
-1. Get FashionIQ from 
+1. Get FashionIQ from https://github.com/XiaoxiaoGuo/fashion-iq
 
-2. Get CIRR from
+2. Get CIRR from https://github.com/Cuberick-Orion/CIRR
 
 * To properly work with the codebase FashionIQ and CIRR datasets should have the following structure:
 
