@@ -2,7 +2,7 @@
 CUDA_VISIBLE_DEVICES=1 \
 python validate.py \
    --dataset fashioniq \
-   --model-s1-path /amax/home/xtyao/cir/MMPT/models/combiner_trained_on_fiq_ViT-B/16_2023-12-27_01:35:11/saved_models/model.pt \
+   --model-s1-path ./models/combiner_trained_on_fiq_ViT-B/16_2023-12-27_01:35:11/saved_models/model.pt \
    --projection-dim 4096 \
    --hidden-dim 8192 \
    --clip-model-name ViT-B/16 \
@@ -17,8 +17,8 @@ python validate.py \
    --asynchronous \
    --fixed-image-encoder \
    --combiner combiner_v5 \
-   --model-s2-path /amax/home/xtyao/cir/MMPT/models/combiner_trained_on_fiq_ViT-B/16_2023-12-27_01:35:11/saved_models/combiner.pt \
-   --img2txt-model-path /amax/home/xtyao/cir/clip4cir_pic2word/models/clip_finetuned_on_fiq_ViT-B/16_2023-12-12_16:55:16/saved_models/best_model.pt \
+   --model-s2-path ./models/combiner_trained_on_fiq_ViT-B/16_2023-12-27_01:35:11/saved_models/combiner.pt \
+   --img2txt-model-path ./saved_models/MPAC/fiq_img2txt.pt \
    --optimizer combiner
 
 
